@@ -4,16 +4,19 @@ using namespace std;
 
 int main()
 {
-    float A, P, R, pi;
-    cout <<"Valor del radio" << endl;
-    cin >> R;
+    float A,B;
+    cout << "Indique el valor de A" << endl;
+    cin >> A;
+    cout << "Indique el valor de B" << endl;
+    cin >> B;
 
-    pi=3.1416;
-
-    P=2*pi*R;
-    A=pi*R*R;
-
-    cout << "el valor del perimetro es " << P << endl;
-    cout << "el valor del area es " << A << endl;
+    if (A==B) {
+        cout << "Los numero son iguales";
+    }
+    else if (A<B) {
+        cout << "el numero mayor es" <<B<< endl;
+    }
+    else
+    cout << "el numero menor es" << A << endl;
     return 0;
 }
