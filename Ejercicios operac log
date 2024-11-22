@@ -1,0 +1,52 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int x, y;
+    cout << "Ingresa el valor de x: ";
+    cin >> x;
+    cout << "Ingresa el valor de y: ";
+    cin >> y;
+
+    // Evaluando las expresiones lógicas
+    bool R1 = (x < 5);
+    bool R2 = (y >= 7);
+    bool R3 = !R2;
+    bool R4 = !R1;
+    bool R5 = R4 && R3;
+
+    cout << "Resultado de la expresión: " << (R5 ? "true" : "false") << endl;
+
+    return 0;
+}
+
+
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a, b, c;
+    cout << "Ingresa el valor de a: ";
+    cin >> a;
+    cout << "Ingresa el valor de b: ";
+    cin >> b;
+    cout << "Ingresa el valor de c: ";
+    cin >> c;
+
+    // Evaluando las expresiones lógicas
+    int R1 = a + b;
+    bool R2 = (R1 == c);
+    bool R3 = (c != 0);
+    int R4 = b - c;
+    bool R5 = (R4 >= 19);
+    bool R6 = !R2;
+    bool R7 = R3 && R5;
+    bool R8 = R6 || R7;
+
+    cout << "Resultado de la expresión: " << (R8 ? "true" : "false") << endl;
+
+    return 0;
+}
